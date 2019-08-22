@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: radial-gradient(circle, #474f57, #384349, #2a363b, #1d2b2d, #111f1f);
+        }
+        canvas {
+            width: 50%;
+            border: solid 1.5px black;
+            background-image: linear-gradient(to bottom, #b3c5fd, #cbd2fd, #dfe0fd, #f0effe, #ffffff);
+        }
+        @media only screen and (max-width: 800px) {
+            canvas {
+                width: 100%;
+            }
+        }
+    </style>
+    <title>RUNNIG ON THE LIFE</title>
+  </head>
+  <body class="bg-dark">
+    <h1 class="text-center bg-info p-4 shadow m-0">RUNNIG ON THE LIFE</h1>
+    <div class="py-4">
+        <center>
+            <canvas id="canvas" class="shadow-lg" width="700" height="300"></canvas>
+            <div class="container mb-2">
+                <button id="iniciar" class="btn btn-primary">Empezar!</button>
+            </div>
+            <a class="text-white" href="https://www.youtube.com/channel/UCYHuLpJPGeJYI2i52ear6Jg" target="_blank">Música</a>
+        </center>
+        <div class="card w-50 mx-auto text-center">
+            <div class="card-header">
+                <h3>Marcador más alto</h3>
+            </div>
+            <div class="marcador card-body p-1"></div>
+        </div>
+        <audio id="music"></audio>
+        <div class="footer fixed-bottom p-2 shadow bg-info">
+            <h6 class="text-center text-light m-0">Web made by Adriel Minyety Gonzalez</h6>
+        </div>
+    </div>
+
+    <script src="audio.js"></script>
+    <script src="app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
