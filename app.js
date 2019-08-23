@@ -335,7 +335,7 @@ function puntuacion() {
     if (nivel.muerto == true) {
         ctx.font = "50px impact";
         ctx.fillStyle = '#000';
-        ctx.fillText(`GAMER OVER`, 230, 150);
+        ctx.fillText(`GAME OVER`, 230, 150);
         ctx.font = "30px impact";
         ctx.fillStyle = '#900';
         ctx.fillText(`-Preciona ( R ) para volver a intentar-`, 140, 180);  
