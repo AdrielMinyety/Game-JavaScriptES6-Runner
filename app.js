@@ -86,13 +86,13 @@ iniciar.addEventListener("click", function (e) {
     iniciar.disabled = true;
 
     document.addEventListener("keyup", function (e) {
-        if (e.keyCode == 32 || e.keyCode == 82) {
+        if (e.code == "Space" || (e.key == 'r' || e.code =='keyR')) {
             if (nivel.muerto == false) {
                 if (avatar.saltando !== true) {
                     saltar();
                 }
             }else {
-                if (e.keyCode == 82) {
+                if (e.key == 'r' || e.code =='keyR') {
                     puntajeMasAlto();
                     nivel.velocidad = 9;
                     fondo.velocidad = 2;
@@ -373,7 +373,7 @@ function puntajeMasAlto() {
         sessionStorage.setItem("highScore", nivel.puntuacion);
     }
     nuevoHighScore = sessionStorage.getItem("highScore");
-    marcador.innerHTML = `<h2 class="text-warning">${nuevoHighScore}</h2>`;
+    marcador.innerHTML = `<h2 class="text-warning">${nuevoHighScore || 0}</h2>`;
 }
 // BUCLE PRINCIPAL=========================
 function iniciarJuego(activar) {
